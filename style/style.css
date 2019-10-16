@@ -1,0 +1,478 @@
+/* Body Style */
+
+body {
+	background: #0065a4;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family: Arial, 'Lucidia Sans Unicode';
+	line-height:1.5;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+/* ANCHOR STYLE */
+
+a:link {
+	text-decoration: none;
+	color: #c1d72e;
+}
+
+a:visited {
+	color: #c1d72e;
+}
+
+a:hover, a:active {
+	color: #FFF;
+}
+
+.none {
+	list-style-type: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#listContainer{
+  margin-top:15px;
+}
+
+#expList ul, li {
+    list-style: none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+#expList p {
+    margin:0;
+    display:block;
+}
+#expList p:hover {
+    background-color:#121212;
+}
+#expList li {
+    line-height:140%;
+    text-indent:0px;
+    background-position: 1px 8px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+}
+
+ol.tree
+{
+	padding: 0 0 0 30px;
+	width: 100%;
+}
+	li 
+	{ 
+		position: relative; 
+	}
+	li.file
+	{
+		margin-left: -1px !important;
+	}
+		li.file a
+		{
+			background: url(document.png) 0 0 no-repeat;
+			color: #fff;
+			padding-left: 21px;
+			text-decoration: none;
+			display: block;
+		}
+	li input
+	{
+		position: absolute;
+		left: 0;
+		margin-left: 0;
+		opacity: 0;
+		z-index: 2;
+		cursor: pointer;
+		height: 1em;
+		width: 1em;
+		top: 0;
+	}
+		li input + ol
+		{
+			background: url(toggle-small-expand.png) 40px 0 no-repeat;
+			margin: -0.938em 0 0 -44px; /* 15px */
+			height: 1em;
+		}
+		li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+	li label
+	{
+		background: url(folder-horizontal.png) 15px 1px no-repeat;
+		cursor: pointer;
+		display: block;
+		padding-left: 37px;
+	}
+
+	li input:checked + ol
+	{
+		background: url(toggle-small.png) 40px 5px no-repeat;
+		margin: -1.25em 0 0 -44px; /* 20px */
+		padding: 1.563em 0 0 80px;
+		height: auto;
+	}
+		li input:checked + ol > li { display: block; margin: 0 0 0.125em;  /* 2px */}
+		li input:checked + ol > li:last-child { margin: 0 0 0.063em; /* 1px */ }
+
+/*
+.gallery {
+	float:left;
+	width: 20%;
+	padding:5% 2% 5% 2%;
+}
+
+.gallary table {
+	margin-right: 10%;
+	margin-left: 10%;
+}*/
+
+/* NAVIGATION STYLE */
+
+.push {
+	padding-top: 30%;
+}
+
+.bigbold {
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.headertext {
+	width: 30%;
+	float: right;
+}
+
+.big {
+	font-size: 16px;
+}
+
+.headerimage {
+	float: left;
+	padding-right: 5%;
+	margin: 0 auto;
+}
+
+.headerimage img {
+	width: 60%;
+}
+
+.topHeader {
+	padding-left: 3%;
+	padding-top: 1%;
+	background-color: #0065a4;
+	position: relative;
+}
+/* Keeps middle content in place */
+.center {
+	margin: 0 auto;
+	width: 60%;
+	clear: both;
+}
+
+.navigation {
+	background-color: #c1d72e;
+	width: 100%;
+}
+
+.navigation img {
+	width: 30%;
+	height: auto;
+}
+
+.navigation nav {
+	color: #0065a4;
+	background-color: #c1d72e;
+	height: 40px;
+	padding-left: 1%;
+
+}
+
+.navigation nav ul {
+	list-style: none;
+	margin: 0 auto;
+	
+}
+
+.navigation nav ul li {
+	float: left;
+	display: inline;
+}
+
+.navigation nav a:link, .navigation nav a:visited {
+	color: #0065a4;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.navigation nav a:hover, .navigation nav a:active, .navigation nav .active a:link, .navigation nav .active a:visited {
+	background: #666;
+	color: #FFF;
+	text-shadow: none;
+}
+
+.navigation nav ul li a {
+	background-color: #c1d72e;
+	height: 40px;
+}
+
+.break {
+	background: #666;
+	height: 5px;
+}
+
+/* === SIDEBAR STYLE === */
+
+.leftbar{
+	width: 30%;
+	float: left;
+	padding: 1%;
+	
+}
+
+.middlebar {
+	width: 30%;
+	float: left;
+	padding: 1%;
+
+}
+
+.rightbar{
+	width: 30%;
+	float: left;
+	padding: 1%;
+}
+
+/* === MAIN CONTENT STYLE === */
+
+.banner {
+	padding-right: 5%;
+	margin: 0 auto;
+}
+
+.banner img {
+	width: 90%;
+}
+
+.topContent img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	
+}
+
+.topContent {
+	overflow: hidden;
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 2%;
+}
+
+/* === FOOTER STYLE === */
+
+.footer {
+	
+	height: 70px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	
+}
+
+
+.footer p {
+	color: #FFF;
+	text-align: center;
+}/* End of CSS 
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	/* === BODY STYLE === */
+	
+	.headertext {
+	display: none;
+	}
+	
+	body {
+		font-size: 90%;
+		color: #000;
+	}
+		
+	/* ANCHOR STYLE */
+	
+	/* Changes anchor colors from green to blue */
+	a:link {
+	text-decoration: none;
+	color: #0065a4;
+	}
+	
+	a:visited {
+	color: #0065a4;
+	}
+
+	a:hover, a:active {
+	color: #666;
+	}
+	
+	/* === REMOVED STYLES === */
+	
+	/* Not used at the moment
+	.gallery {
+		float:left;
+		width: 100%;
+		padding-left: 15%;
+		padding-right: 15%;
+	}*/
+	
+	/* Removed to become more optimized for mobile devices */
+	.break {
+		display: none;
+	}
+	
+	/* Only displayed on index page text holder incase needed */
+	.content2 {
+		display: none;
+	}
+	
+	.mobile { /* Gets rid of headers and images */
+		display: none;
+	}
+	
+
+	
+	/* === NAVIGATION STYLE === */
+	
+	/* Adjusts from 60% to 100% for mobile devices */
+	.center {
+		width: 100%;
+	}
+	
+	.navigation {
+		background-color: #0065a4;
+	}
+	
+	/* Adjusts image size from 30% to 100% for mobile devices */
+	.navigation img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 3%;
+	}
+	
+	.navigation nav {
+		background: #666;
+		height: 200px;
+		line-height: 30px;
+		margin-left:2%;
+		margin-right:2%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		text-align: center;
+		width: 96%;
+	}
+		
+	.navigation nav ul {
+		list-style: none; 
+		margin: 0 auto;
+		padding-left: 0;
+	}
+	
+	.navigation nav li {
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	.navigation nav a:link, .navigation nav a:visited {
+		color: #FFF;
+		background: #666;
+		display: block;
+		height: 30px;
+		padding: 5px 0;
+		text-decoration: none;
+	}
+	
+	.navigation nav a:active {
+		color: #FFF;
+	}
+	
+	.navigation nav a:hover, .navigation nav .active a:link, .navigation nav .active a:visited {
+		background: #c1d72e;
+		color: #0065a4;
+		text-shadow: none !important;
+	}
+		
+	.navigation nav li a {
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+	/* === MAIN CONTENT STYLE === */
+	
+	.topContent {
+		background-color: #FFF;
+		color: #0065a4;
+		padding: 2% 5%;
+		margin-bottom: 4%;
+	}
+
+	.content {
+		width: 96%;
+		position: relative;
+		margin-left:2%;
+		margin-right: 2%;
+	}	
+	
+	/* === SIDEBAR STYLE === */
+	
+	/* Only used on index page */
+	.leftbar{
+		width: 96%;
+		position: relative; 
+		margin-left: 1%;
+		margin-right: 2%;
+		float: none;
+		padding: 1%;
+	
+	}
+
+	/* Only used on index page */
+	.middlebar {
+		width: 96%;
+		position: relative;
+		margin-left: 1%;
+		margin-right: 2%;	
+		float: none;
+
+	}
+	/* Only used on index page */
+	.rightbar{
+		width: 96%;
+		position: relative;
+		margin-left: 1%;
+		margin-right: 2%;
+		float: none;
+	}
+	
+	/* === FOOTER STYLE === */
+	
+	.footer {
+		height: 70px;
+		width: 100%;
+		margin-bottom: 0px;
+		bottom: 0;
+		position: relative;
+	}
+} /* End of media queries*/
